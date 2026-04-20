@@ -406,13 +406,13 @@
   }
 
   .amazon-button {
-      background: linear-gradient(135deg, #ff9900 0%, #e68a00 100%);
-      box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+      background: linear-gradient(135deg, #ff85a2 0%, #ff5c8a 100%);
+      box-shadow: 0 4px 15px rgba(255, 92, 138, 0.3);
   }
 
   .amazon-button:hover {
-      background: linear-gradient(135deg, #ffac33 0%, #ff9900 100%);
-      box-shadow: 0 8px 25px rgba(255, 153, 0, 0.4);
+      background: linear-gradient(135deg, #ff99b5 0%, #ff709b 100%);
+      box-shadow: 0 8px 25px rgba(255, 92, 138, 0.4);
   }
 
   /* Registration Section */
