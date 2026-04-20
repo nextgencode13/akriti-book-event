@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akriti's Book Launch Event - The ROI of Falling in Love | May 16, 2026</title>
+
+    <!-- SEO and Social Media Meta Tags -->
+    <meta name="description"
+        content="Join author Akriti for an unforgettable literary event featuring her bestselling romance novel 'The ROI of Falling in Love'. May 16, 2026 in Tokyo. Reserve your spot now!">
+    <meta name="keywords"
+        content="book launch, author event, book signing, Akriti author, The ROI of Falling in Love, book event Tokyo, literary event, book reading">
+
+    <!-- Open Graph / Facebook / Instagram / LinkedIn / Teams -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="An Afternoon with the Author - Akriti's Book Launch">
+    <meta property="og:description"
+        content="Join author Akriti for an unforgettable literary event featuring her bestselling romance novel 'The ROI of Falling in Love'. May 16, 2026 in Tokyo.">
+    <meta property="og:image" content="akriti-book.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="An Afternoon with the Author - Akriti's Book Launch">
+    <meta property="twitter:description"
+        content="Join author Akriti for an unforgettable literary event featuring her bestselling romance novel 'The ROI of Falling in Love'. May 16, 2026 in Tokyo.">
+    <meta property="twitter:image" content="akriti-book.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="akriti-book.jpg">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e8dff5 0%, #f5e8f0 50%, #f0e8f5 100%);
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Main Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .sparkles {
+            display: none;
+        }
+
+        .main-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            color: #6c5299;
+            margin: 10px 0;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .sparkle-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+
+        .header-line {
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(108, 82, 153, 0.3), transparent);
+            margin: 15px auto;
+            position: relative;
+        }
+
+        .header-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(108, 82, 153, 0.6), transparent);
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            color: #8b7ca8;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            margin-top: 10px;
+        }
+
+        /* Image Gallery Section */
+        .gallery-section {
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .image-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(107, 77, 139, 0.15);
+            position: relative;
+        }
+
+        .image-frame {
+            position: relative;
+            width: 100%;
+            overflow: visible;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(107, 77, 139, 0.2);
+        }
+
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .image-container:hover .image-frame img {
+            transform: scale(1.05);
+        }
+
+        .image-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #b89dcc;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.8em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 5;
+        }
+
+        .image-description {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .image-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            color: #7b5d9b;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+        }
+
+        .image-text {
+            font-size: 0.95em;
+            color: #8b6fa8;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Details Grid */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .detail-card {
+            background: linear-gradient(135deg, rgba(185, 157, 204, 0.3), rgba(212, 181, 232, 0.2));
+            padding: 18px 15px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(155, 125, 189, 0.4);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(123, 93, 155, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .detail-card:hover {
+            background: linear-gradient(135deg, rgba(185, 157, 204, 0.5), rgba(212, 181, 232, 0.4));
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(123, 93, 155, 0.2);
+            border-color: rgba(155, 125, 189, 0.6);
+        }
+
+        .detail-icon {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .detail-label {
+            font-size: 0.85em;
+            color: #8b6fa8;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-value {
+            font-size: 1em;
+            color: #6b4d8b;
+            font-weight: 700;
+            margin-top: 5px;
+            transition: color 0.3s ease;
+        }
+
+        a.detail-value:hover {
+            color: #9b7dbd;
+            text-decoration: underline;
+        }
+
+        .author-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(107, 77, 139, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .author-link:hover {
+            color: #9b7dbd;
+            border-bottom-color: #9b7dbd;
+        }
+
+        /* Footer tagline */
+        .footer-tagline {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8em;
+            color: #6c5299;
+            margin-top: 80px;
+            padding: 45px 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 11;
+            background: linear-gradient(135deg, 
+                rgba(212, 181, 232, 0.4) 0%, 
+                rgba(232, 223, 245, 0.6) 50%, 
+                rgba(245, 232, 240, 0.4) 100%);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            border: 1px solid rgba(155, 125, 189, 0.2);
+            box-shadow: 0 10px 30px rgba(107, 77, 139, 0.1);
+            width: 100%;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 0.8s ease 0.6s backwards;
+        }
+
+        .footer-tagline:hover {
+            transform: scale(1.02) translateY(-5px);
+            background: linear-gradient(135deg, 
+                rgba(212, 181, 232, 0.5) 0%, 
+                rgba(232, 223, 245, 0.7) 50%, 
+                rgba(245, 232, 240, 0.5) 100%);
+            box-shadow: 0 15px 40px rgba(107, 77, 139, 0.2);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f5e8f0;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #d4b5e8 0%, #9b7dbd 100%);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7b5d9b;
+        }
+
+        .footer-tagline::before,
+        .footer-tagline::after {
+            content: "—";
+            margin: 0 15px;
+            opacity: 0.5;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.2em;
+            }
+
+            .image-container {
+                padding: 20px;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-title {
+                font-size: 1.6em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .image-badge {
+                top: -8px;
+                right: 10px;
+                padding: 6px 14px;
+                font-size: 0.7em;
+            }
+
+            .image-frame {
+                margin-top: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .main-title {
+                font-size: 1.8em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+
+            .image-title {
+                font-size: 1.4em;
+            }
+
+            .footer-tagline {
+                font-size: 1.1em;
+            }
+
+            .sparkles {
+                font-size: 1.4em;
+            }
+
+            .image-badge {
+                top: -12px;
+                right: 10px;
+                padding: 5px 12px;
+                font-size: 0.65em;
+                letter-spacing: 0.5px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            .image-frame {
+                margin-bottom: 15px;
+                margin-top: 5px;
+            }
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #9b7dbd 0%, #7b5d9b 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            box-shadow: 0 4px 15px rgba(123, 93, 155, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(123, 93, 155, 0.4);
+            background: linear-gradient(135deg, #a88cd0 0%, #8b6fa8 100%);
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .amazon-button {
+            background: linear-gradient(135deg, #ff9900 0%, #e68a00 100%);
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+        }
+
+        .amazon-button:hover {
+            background: linear-gradient(135deg, #ffac33 0%, #ff9900 100%);
+            box-shadow: 0 8px 25px rgba(255, 153, 0, 0.4);
+        }
+
+        /* Registration Section */
+        .registration-section {
+            margin-top: 80px;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(107, 77, 139, 0.1);
+            text-align: center;
+        }
+
+        .registration-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            color: #7b5d9b;
+            margin-bottom: 20px;
+        }
+
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-input {
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(155, 125, 189, 0.3);
+            background: rgba(255, 255, 255, 0.8);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: #9b7dbd;
+            box-shadow: 0 0 0 4px rgba(155, 125, 189, 0.1);
+        }
+
+        .submit-button {
+            padding: 15px;
+            background: #7b5d9b;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background: #6b4d8b;
+        }
+    </style>
+</head>
+
+<body itemscope itemtype="https://schema.org/Event">
+    <!-- Structured Data for Event -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "An Afternoon with the Author - Akriti's Book Launch",
+      "startDate": "2026-05-16T14:30",
+      "endDate": "2026-05-16T16:30",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Tokyo, Japan",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Japan"
+        }
+      },
+      "image": [
+        "akriti-book.jpg"
+       ],
+      "description": "Join author Akriti for an unforgettable literary event featuring her bestselling romance novel 'The ROI of Falling in Love'. Discover the story that has captured hearts everywhere.",
+      "performer": {
+        "@type": "Person",
+        "name": "Akriti",
+        "jobTitle": "Author"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Akriti Events",
+        "url": "https://yourdomain.com"
+      }
+    }
+    </script>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header" itemprop="name">
+            <h1 class="main-title">
+                <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="#a88cd0"/>
+                </svg>
+                An Afternoon with the Author
+                <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" fill="#a88cd0"/>
+                </svg>
+            </h1>
+            <div class="header-line"></div>
+            <p class="subtitle">Join us for a cozy and inspiring literary gathering</p>
+        </header>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" itemscope itemtype="https://schema.org/CreativeWork">
+            <div class="image-container">
+                <div class="image-frame">
+                    <img src="akriti-hero-img.jpeg" alt="Featured Image">
+                    <div class="image-badge">FEATURED</div>
+                </div>
+
+                <div class="image-description">
+                    <h2 class="image-title" itemprop="headline">The ROI of Falling in Love</h2>
+                    <p class="image-text" itemprop="description">Join author <a href="https://www.linkedin.com/in/akriti-b677181a2/" target="_blank" class="author-link">Akriti</a> for an unforgettable literary event
+                        featuring her
+                        bestselling romance novel. Discover the story that has captured hearts everywhere.</p>
+                    <div class="cta-group">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScB4cBtvQ_FuAzoJWllDwetE8M-NwApoWmnDtcYDSch1NlR4g/viewform"
+                            target="_blank" class="cta-button">Register for Event</a>
+                        <a href="https://www.amazon.co.jp/dp/B0GSZLJHFX?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_1HEP5KK1RPSVRCGK73GA&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_1HEP5KK1RPSVRCGK73GA&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_1HEP5KK1RPSVRCGK73GA&bestFormat=true"
+                            target="_blank" class="cta-button amazon-button">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <!-- Details Grid -->
+                <div class="details-grid">
+                    <div class="detail-card" itemscope itemtype="https://schema.org/DateTime">
+                        <div class="detail-icon">📅</div>
+                        <div class="detail-label">Date</div>
+                        <div class="detail-value" itemprop="startDate" content="2026-05-16T14:30">16 May 2026</div>
+                    </div>
+                    <div class="detail-card" itemscope itemtype="https://schema.org/DateTime">
+                        <div class="detail-icon">🕐</div>
+                        <div class="detail-label">Time</div>
+                        <div class="detail-value" itemprop="startTime" content="14:30">2:30 PM - 4:30 PM</div>
+                    </div>
+                    <div class="detail-card" itemscope itemtype="https://schema.org/Place">
+                        <div class="detail-icon">📍</div>
+                        <div class="detail-label">Location</div>
+                        <div class="detail-value" itemprop="location" content="Tokyo, Japan">Tokyo, Japan</div>
+                    </div>
+                    <div class="detail-card" itemscope itemtype="https://schema.org/Person" itemscope
+                        itemtype="https://schema.org/performer">
+                        <div class="detail-icon">💜</div>
+                        <div class="detail-label">Author</div>
+                        <a href="https://www.linkedin.com/in/akriti-b677181a2/" target="_blank" class="detail-value" itemprop="name" style="display: block;">Akriti</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register" class="registration-section">
+            <h2 class="registration-title">Be Part of the Story</h2>
+            <p class="image-text" style="margin-bottom: 30px;">Spaces are limited for this exclusive afternoon. Please
+                fill out the registration form below to confirm your attendance.</p>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScB4cBtvQ_FuAzoJWllDwetE8M-NwApoWmnDtcYDSch1NlR4g/viewform"
+                target="_blank" class="cta-button" style="width: 100%; max-width: 400px; display: inline-block;">Open
+                Registration Form</a>
+        </section>
+
+        <!-- Footer Tagline -->
+        <footer class="footer-tagline">
+            Come for the stories, stay for the vibes
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Hover effect on detail cards
+            const detailCards = document.querySelectorAll('.detail-card');
+            detailCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.opacity = '1';
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function () {
+                    this.style.opacity = '1';
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
